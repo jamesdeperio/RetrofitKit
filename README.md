@@ -5,6 +5,19 @@
 ## USAGE:
 RetrofitManager
 - extend with your to apply this lazy retrofit configuration
+- available methods
+    * initCacheSize
+    * initBaseURL
+    * initWriteTimeOut
+    * initConnectTimeOut
+    * initReadTimeOut
+    * initConverterFactory
+    * initRxAdapterFactory
+    * isPrintLogEnabled
+    * clearRetrofit
+    * OkHttpClient.Builder.interceptorConfiguration(builder: OkHttpClient.Builder) //add your custom interceptor
+    
+       
 ```kotlin
 class NetworkManager(context: Context) : RetrofitManager(context=context) {
     private var restRepository:RestRepository = create(RestRepository::class.java) as RestRepository //provide your api locator
