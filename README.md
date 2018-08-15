@@ -15,6 +15,7 @@ RetrofitManager
     * initRxAdapterFactory
     * isPrintLogEnabled
     * clearRetrofit
+    * create(service: Class<*>)
     * OkHttpClient.Builder.interceptorConfiguration(builder: OkHttpClient.Builder) //add your custom interceptor
     
        
@@ -22,7 +23,7 @@ RetrofitManager
 class NetworkManager(context: Context) : RetrofitManager(context=context) {
     private var restRepository:RestRepository = create(RestRepository::class.java) as RestRepository //provide your api locator
 
-    override fun initBaseURL(): String = "baseURL.com"
+    override fun initBaseURL(): String = "baseURL.com/"
     override fun initCacheSize(): Int = 0
     override fun initConnectTimeOut(): Long = 60
     override fun initReadTimeOut(): Long = 60
@@ -31,15 +32,38 @@ class NetworkManager(context: Context) : RetrofitManager(context=context) {
     override fun initConverterFactory(): Converter.Factory = SerializationFormatFactory.Builder()
             .setXMLConverterFactory(converterFactory = TikXmlConverterFactory.create(TikXml.Builder().exceptionOnUnreadXml(false).build()))
             .setJSONConverterFactory(converterFactory = GsonConverterFactory.create(GsonBuilder().setLenient().create()))
+             //.addCustomConverterFactory(responseFormat = YAMLFormat::class.java, converterFactory = YAMLConverterFactory.create())
             .build()
 
     override fun initRxAdapterFactory(): CallAdapter.Factory = RxJava2CallAdapterFactory.create()
     override fun isPrintLogEnabled(): Boolean = true
+}
+
+interface RestRepository {
+    @GET("something")
+    @JSONFormat
+    fun getResponse1(): Observable<Response>
+
+    @GET("something")
+    @XMLFormat
+    fun getResponse2(): Observable<Response>
+
+   // @GET("something")
+   // @YAMLFormat
+   // fun getResponse3(): Observable<Response>
+
+}
 
 ```
 ___
 * SerializationFormatFactory.Builder()
 - custom builder that allow multiple converterfactory
+- available methods
+    *setXMLConverterFactory
+    *setJSONConverterFactory
+    *addCustomConverterFactory
+    
+  
 ```kotlin
   SerializationFormatFactory.Builder()
     .setXMLConverterFactory(converterFactory = TikXmlConverterFactory.create(TikXml.Builder().exceptionOnUnreadXml(false).build()))
