@@ -56,7 +56,7 @@ interface RestRepository {
 
 ```
 ___
-* SerializationFormatFactory.Builder()
+SerializationFormatFactory.Builder()
 - custom builder that allow multiple converterfactory
 - available methods
     * setXMLConverterFactory
