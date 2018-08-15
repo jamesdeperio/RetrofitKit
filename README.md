@@ -59,9 +59,9 @@ ___
 * SerializationFormatFactory.Builder()
 - custom builder that allow multiple converterfactory
 - available methods
-    *setXMLConverterFactory
-    *setJSONConverterFactory
-    *addCustomConverterFactory
+    * setXMLConverterFactory
+    * setJSONConverterFactory
+    * addCustomConverterFactory
     
   
 ```kotlin
