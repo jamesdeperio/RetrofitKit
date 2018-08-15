@@ -2,7 +2,9 @@
 [![Release](https://jitpack.io/v/jamesdeperio/PocketLib.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-## USAGE
+## USAGE:
+RetrofitManager
+- extend with your to apply this lazy retrofit configuration
 ```kotlin
 class NetworkManager(context: Context) : RetrofitManager(context=context) {
     private var restRepository:RestRepository = create(RestRepository::class.java) as RestRepository //provide your api locator
@@ -24,6 +26,7 @@ class NetworkManager(context: Context) : RetrofitManager(context=context) {
 ```
 ___
 * SerializationFormatFactory.Builder()
+- custom builder that allow multiple converterfactory
 ```kotlin
   SerializationFormatFactory.Builder()
     .setXMLConverterFactory(converterFactory = TikXmlConverterFactory.create(TikXml.Builder().exceptionOnUnreadXml(false).build()))
@@ -31,6 +34,7 @@ ___
     //.addCustomConverterFactory(responseFormat = YAMLFormat::class.java, converterFactory = YAMLConverterFactory.create())
     .build()
     
+    //add annotation for custom converter
     @Retention(AnnotationRetention.RUNTIME)
     annotation class YAMLFormat
 
