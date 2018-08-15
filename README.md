@@ -2,6 +2,15 @@
 [![Release](https://jitpack.io/v/jamesdeperio/PocketLib.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
+## How to?
+
+### Gradle
+```groovy
+dependencies {
+    implementation 'com.github.jamesdeperio:RetrofitKit:1.0.0'
+}
+```
+- better if you will consider using [CodePocketBuilder](https://github.com/jamesdeperio/CodePocketBuilder)
 ## USAGE:
 RetrofitManager
 - extend with your to apply this lazy retrofit configuration
