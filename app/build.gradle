@@ -8,6 +8,10 @@ android {
     defaultConfig {
         minSdkVersion 15
     }
+    compileOptions {
+        kotlinOptions.freeCompilerArgs += ['-module-name', 'Retrofitkit']
+    }
+
     lintOptions {
         abortOnError false
     }
