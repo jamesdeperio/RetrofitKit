@@ -7,7 +7,7 @@
 ### Gradle
 ```groovy
 dependencies {
-    implementation 'com.github.jamesdeperio:RetrofitKit:1.0'
+    implementation 'com.github.jamesdeperio:RetrofitKit:v1.0.0'
 }
 ```
 - better if you will consider using [CodePocketBuilder](https://github.com/jamesdeperio/CodePocketBuilder)
