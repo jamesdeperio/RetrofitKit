@@ -8,19 +8,20 @@ android {
     defaultConfig {
         minSdkVersion 15
     }
-    compileOptions {
-        kotlinOptions.freeCompilerArgs += ['-module-name', 'Retrofitkit']
+    packagingOptions {
+        exclude 'META-INF/app_release.kotlin_module'
     }
-
     lintOptions {
         abortOnError false
     }
-
+    buildTypes {
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+
 }
