@@ -1,7 +1,15 @@
 # RetrofitKit
-[![Release](https://jitpack.io/v/jamesdeperio/PocketLib.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
+[![Release](https://jitpack.io/v/jamesdeperio/RetrofitKit.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
+[![GitHub release](https://img.shields.io/github/release/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/releases/)
+[![GitHub tag](https://img.shields.io/github/tag/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/tags/)
+[![GitHub commits](https://img.shields.io/github/commits-since/jamesdeperio/RetrofitKit/v2.0.0.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/commit/)
+[![HitCount](http://hits.dwyl.io/jamesdeperio/RetrofitKit.svg)](http://hits.dwyl.io/jamesdeperio/RetrofitKit)
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
-
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/graphs/commit-activity)
+[![GitHub forks](https://img.shields.io/github/forks/jamesdeperio/RetrofitKit.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/jamesdeperio/RetrofitKit/network/)
+[![GitHub stars](https://img.shields.io/github/stars/jamesdeperio/RetrofitKit.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/jamesdeperio/RetrofitKit/stargazers/)
+[![GitHub watchers](https://img.shields.io/github/watchers/jamesdeperio/RetrofitKit.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/jamesdeperio/RetrofitKit/watchers/)
+[![GitHub followers](https://img.shields.io/github/followers/jamesdeperio.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jamesdeperio?tab=followers)
 ## How to?
 
 ### Gradle
