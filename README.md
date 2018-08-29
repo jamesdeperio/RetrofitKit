@@ -1,4 +1,3 @@
-# RetrofitKit
 ![alt text](https://github.com/jamesdeperio/RetrofitKit/blob/master/retrofitkit.png "RetrofitKit")
 
 [![Release](https://jitpack.io/v/jamesdeperio/RetrofitKit.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
