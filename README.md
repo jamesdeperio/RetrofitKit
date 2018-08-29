@@ -12,6 +12,7 @@
 [![GitHub watchers](https://img.shields.io/github/watchers/jamesdeperio/RetrofitKit.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/jamesdeperio/RetrofitKit/watchers/)
 [![GitHub followers](https://img.shields.io/github/followers/jamesdeperio.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jamesdeperio?tab=followers)
 ## How to?
+### [READ FULL DOCUMENTATION](https://jamesdeperio.github.io/retrofitkit/) 
 
 ### Gradle
 ```groovy
