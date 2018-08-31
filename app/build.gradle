@@ -1,27 +1,42 @@
-apply plugin: 'com.android.library'
+apply plugin: 'com.android.application'
+
 apply plugin: 'kotlin-android'
-apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.github.jamesdeperio'
 
 android {
     compileSdkVersion 28
     defaultConfig {
+        applicationId "jdp.retrofitkitdemo"
         minSdkVersion 15
-    }
-    packagingOptions {
-        exclude 'META-INF/app_release.kotlin_module'
-    }
-    lintOptions {
-        abortOnError false
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
     }
     buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
     }
 }
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    /*RXJAVA */
+    ext.rxjava_version = '2.2.0'
+    ext.rxandroid_version = '2.0.2'
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+    implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
 
+    /*CONVERTER */
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.tickaroo.tikxml:annotation:0.8.13'
+    implementation 'com.tickaroo.tikxml:core:0.8.13'
+    kapt 'com.tickaroo.tikxml:processor:0.8.13'
+    implementation 'com.tickaroo.tikxml:retrofit-converter:0.8.13'
+
+    implementation project(':retrofitkit')
 }
