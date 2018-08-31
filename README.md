@@ -1,9 +1,10 @@
 ![alt text](https://github.com/jamesdeperio/RetrofitKit/blob/master/retrofitkit.png "RetrofitKit")
-
 [![Release](https://jitpack.io/v/jamesdeperio/RetrofitKit.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
 [![GitHub release](https://img.shields.io/github/release/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/releases/)
 [![GitHub tag](https://img.shields.io/github/tag/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/tags/)
 [![GitHub commits](https://img.shields.io/github/commits-since/jamesdeperio/RetrofitKit/v1.0.1.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/commit/)
+[![Kotlin](https://img.shields.io/badge/Kotlin-1.2.61-green.svg?style=flat-square)](http://kotlinlang.org)
+[![Build Status](https://img.shields.io/travis/jamesdeperio/RetrofitKit.svg?style=flat-square)](https://travis-ci.org/jamesdeperio/RetrofitKit)
 [![HitCount](http://hits.dwyl.io/jamesdeperio/RetrofitKit.svg)](http://hits.dwyl.io/jamesdeperio/RetrofitKit)
 [![License](https://img.shields.io/badge/License%20-Apache%202-337ab7.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/graphs/commit-activity)
