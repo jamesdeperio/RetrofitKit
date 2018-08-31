@@ -9,7 +9,7 @@ android {
         minSdkVersion 15
     }
     packagingOptions {
-        exclude 'META-INF/app_release.kotlin_module'
+        exclude 'META-INF/retrofitkit_release.kotlin_module'
     }
     lintOptions {
         abortOnError false
