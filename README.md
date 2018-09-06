@@ -14,6 +14,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/jamesdeperio.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jamesdeperio?tab=followers)
 ## How to?
 ### [READ FULL DOCUMENTATION](https://jamesdeperio.github.io/retrofitkit/) 
+### [DEMO APK](https://github.com/jamesdeperio/CodePocketBuilderDemo/blob/master/app-debug.apk)
 ___
 ## CHANGELOG
 #### v1.0.1
