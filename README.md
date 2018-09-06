@@ -15,6 +15,15 @@
 ## How to?
 ### [READ FULL DOCUMENTATION](https://jamesdeperio.github.io/retrofitkit/) 
 ___
+## CHANGELOG
+#### v1.0.1
+* Updated: kotlin dependency
+* Updated: okhttp3:logging-interceptor dependency
+* Fixed: exclude 'META-INF/app_release.kotlin_module'
+#### v1.0.0
+* Created: base class for lazy retrofit configuration
+* Created: multiple converter
+___
 ### DEPENDENCIES
 Thanks to the author of external Library used:
 * [org.jetbrains.kotlin:kotlin-stdlib-jdk7](https://github.com/JetBrains/kotlin/tree/master/libraries/stdlib)
