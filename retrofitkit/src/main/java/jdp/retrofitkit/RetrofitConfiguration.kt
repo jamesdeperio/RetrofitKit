@@ -16,8 +16,7 @@ internal interface RetrofitConfiguration {
     fun initConverterFactory(): Converter.Factory
     fun initRxAdapterFactory(): CallAdapter.Factory
     fun isPrintLogEnabled(): Boolean
-    fun debugMode(cache: Cache?)
-    fun releaseMode(cache: Cache?)
+    fun build(cache: Cache?)
     fun OkHttpClient.Builder.interceptorConfiguration(builder: OkHttpClient.Builder): OkHttpClient.Builder
     fun clearRetrofit()
 }
