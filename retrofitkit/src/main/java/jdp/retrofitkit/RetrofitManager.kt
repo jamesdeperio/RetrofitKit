@@ -16,36 +16,25 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
     override fun OkHttpClient.Builder.interceptorConfiguration(builder: OkHttpClient.Builder): OkHttpClient.Builder
             = builder
 
-    override fun releaseMode(cache: Cache?) {
+    override fun build(cache: Cache?) {
         val  okHttpClientBuilder= OkHttpClient.Builder()
         okHttpClientBuilder.cache(cache)
                 .writeTimeout(initWriteTimeOut(), TimeUnit.SECONDS)
                 .connectTimeout(initConnectTimeOut(), TimeUnit.SECONDS)
                 .readTimeout(initReadTimeOut(), TimeUnit.SECONDS)
-                .interceptorConfiguration(okHttpClientBuilder)
+
+        if (isPrintLogEnabled()) { // debug mode
+            val logging = HttpLoggingInterceptor()
+            logging.level = HttpLoggingInterceptor.Level.BODY
+            okHttpClientBuilder.addInterceptor(logging)
+            okHttpClientBuilder.build()
+        } else { // release mode
+            okHttpClientBuilder.interceptorConfiguration(okHttpClientBuilder)
+        }
 
         retrofit = Retrofit.Builder()
                 .baseUrl(initBaseURL())
                 .client(okHttpClientBuilder.build())
-                .addConverterFactory(initConverterFactory())
-                .addCallAdapterFactory(initRxAdapterFactory())
-                .build()
-    }
-
-    override fun debugMode(cache: Cache?) {
-        val logging = HttpLoggingInterceptor()
-        logging.level = HttpLoggingInterceptor.Level.BODY
-        val okHttpClient = OkHttpClient.Builder()
-                .cache(cache)
-                .writeTimeout(initWriteTimeOut(), TimeUnit.SECONDS)
-                .connectTimeout(initConnectTimeOut(), TimeUnit.SECONDS)
-                .readTimeout(initReadTimeOut(), TimeUnit.SECONDS)
-                .addInterceptor(logging)
-
-                .build()
-        retrofit = Retrofit.Builder()
-                .baseUrl(initBaseURL())
-                .client(okHttpClient)
                 .addConverterFactory(initConverterFactory())
                 .addCallAdapterFactory(initRxAdapterFactory())
                 .build()
@@ -56,11 +45,9 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
             if (initCacheSize() != 0) {
                 val cacheSize = initCacheSize() * 1024 * 1024
                 val cache = Cache(context.cacheDir, cacheSize.toLong())
-                if (isPrintLogEnabled()) debugMode(cache)
-                else releaseMode(cache)
+                build(cache)
             } else {
-                if (isPrintLogEnabled()) debugMode(null)
-                else releaseMode(null)
+                build(null)
             }
         }
         return retrofit!!.create(service)
