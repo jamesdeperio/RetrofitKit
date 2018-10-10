@@ -21,7 +21,7 @@
 ___
 ## CHANGELOG
 #### v1.0.4
-* MERGED: PR of @marjorietiozon for synchronization of retrofit instance
+* MERGED: PR of [@marjorietiozon](https://github.com/marjorietiozon) for synchronization of retrofit instance
 #### v1.0.3
 * FIXED: interceptorConfiguration was not executed in debug mode
 * MERGED: PR of [@yuelvic](https://github.com/yuelvic) for code optimization
