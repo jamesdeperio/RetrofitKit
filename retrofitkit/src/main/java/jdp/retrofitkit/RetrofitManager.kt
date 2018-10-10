@@ -27,11 +27,8 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
             val logging = HttpLoggingInterceptor()
             logging.level = HttpLoggingInterceptor.Level.BODY
             okHttpClientBuilder.addInterceptor(logging)
-            okHttpClientBuilder.build()
-        } else { // release mode
-            okHttpClientBuilder.interceptorConfiguration(okHttpClientBuilder)
         }
-
+        okHttpClientBuilder.interceptorConfiguration(okHttpClientBuilder)
         retrofit = Retrofit.Builder()
                 .baseUrl(initBaseURL())
                 .client(okHttpClientBuilder.build())
