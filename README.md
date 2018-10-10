@@ -2,7 +2,7 @@
 [![Release](https://jitpack.io/v/jamesdeperio/RetrofitKit.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
 [![GitHub release](https://img.shields.io/github/release/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/releases/)
 [![GitHub tag](https://img.shields.io/github/tag/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/tags/)
-[![GitHub commits](https://img.shields.io/github/commits-since/jamesdeperio/RetrofitKit/v1.0.3.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/commit/)
+[![GitHub commits](https://img.shields.io/github/commits-since/jamesdeperio/RetrofitKit/v1.0.4.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/commit/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.2.71-green.svg?style=flat-square)](http://kotlinlang.org)
 [![Build Status](https://img.shields.io/travis/jamesdeperio/RetrofitKit.svg?style=flat-square)](https://travis-ci.org/jamesdeperio/RetrofitKit)
 [![HitCount](http://hits.dwyl.io/jamesdeperio/RetrofitKit.svg)](http://hits.dwyl.io/jamesdeperio/RetrofitKit)
@@ -20,6 +20,8 @@
 ### [DEMO APK](https://github.com/jamesdeperio/CodePocketBuilderDemo/blob/master/app-debug.apk)
 ___
 ## CHANGELOG
+#### v1.0.4
+* MERGED: PR of @marjorietiozon for synchronization of retrofit instance
 #### v1.0.3
 * FIXED: interceptorConfiguration was not executed in debug mode
 * MERGED: PR of [@yuelvic](https://github.com/yuelvic) for code optimization
