@@ -38,14 +38,12 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
     }
 
     override fun create(service: Class<*>): Any {
-        if (retrofit == null) {
-            if (initCacheSize() != 0) {
+        if (retrofit == null) when {
+            initCacheSize() != 0 -> {
                 val cacheSize = initCacheSize() * 1024 * 1024
                 val cache = Cache(context.cacheDir, cacheSize.toLong())
                 build(cache)
-            } else {
-                build(null)
-            }
+            }else -> build(null)
         }
         return retrofit!!.create(service)
     }
