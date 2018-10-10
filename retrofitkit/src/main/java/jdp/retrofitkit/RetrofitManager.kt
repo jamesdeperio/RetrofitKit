@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit
 
 
 abstract class RetrofitManager(private val context: Context) : RetrofitConfiguration {
-    private var retrofit: Retrofit? = null
+    @field:[Volatile] private var retrofit: Retrofit? = null
     override fun clearRetrofit() {
         retrofit=null
     }
@@ -37,7 +37,7 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
                 .build()
     }
 
-    override fun create(service: Class<*>): Any {
+    override fun create(service: Class<*>): Any = if (retrofit == null) synchronized(service){
         if (retrofit == null) when {
             initCacheSize() != 0 -> {
                 val cacheSize = initCacheSize() * 1024 * 1024
@@ -46,7 +46,7 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
             }else -> build(null)
         }
         return retrofit!!.create(service)
-    }
+    }else retrofit!!.create(service)
 
     override fun isPrintLogEnabled(): Boolean = false
 }
