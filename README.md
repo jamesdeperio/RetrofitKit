@@ -19,7 +19,7 @@ ___
 ## CHANGELOG
 #### v1.0.3
 * FIXED: interceptorConfiguration was not executed in debug mode
-* MERGED: PR of @yuelvic for code optimization
+* MERGED: PR of [@yuelvic](https://github.com/yuelvic) for code optimization
 #### v1.0.2
 * UPDATED: kotlin dependency to v1.2.71
 * UPDATED: gradle dependency to v3.2.0
