@@ -14,7 +14,7 @@ internal interface RetrofitConfiguration {
     fun initReadTimeOut(): Long = 30
     fun create(service: Class<*>): Any
     fun initConverterFactory(): Converter.Factory
-    fun initRxAdapterFactory(): CallAdapter.Factory
+    fun initCallAdapterFactory(): CallAdapter.Factory
     fun isPrintLogEnabled(): Boolean
     fun build(cache: Cache?)
     fun OkHttpClient.Builder.interceptorConfiguration(builder: OkHttpClient.Builder): OkHttpClient.Builder

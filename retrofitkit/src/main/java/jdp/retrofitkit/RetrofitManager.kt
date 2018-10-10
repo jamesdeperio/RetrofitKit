@@ -33,7 +33,7 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
                 .baseUrl(initBaseURL())
                 .client(okHttpClientBuilder.build())
                 .addConverterFactory(initConverterFactory())
-                .addCallAdapterFactory(initRxAdapterFactory())
+                .addCallAdapterFactory(initCallAdapterFactory())
                 .build()
     }
 
