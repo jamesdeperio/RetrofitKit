@@ -12,6 +12,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/jamesdeperio/RetrofitKit.svg?style=social&label=Star&maxAge=2592000)](https://GitHub.com/jamesdeperio/RetrofitKit/stargazers/)
 [![GitHub watchers](https://img.shields.io/github/watchers/jamesdeperio/RetrofitKit.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/jamesdeperio/RetrofitKit/watchers/)
 [![GitHub followers](https://img.shields.io/github/followers/jamesdeperio.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jamesdeperio?tab=followers)
+[![Open Source Helpers](https://www.codetriage.com/jamesdeperio/retrofitkit/badges/users.svg)](https://www.codetriage.com/jamesdeperio/retrofitkit)
 ## How to?
 ### [READ FULL DOCUMENTATION](https://jamesdeperio.github.io/retrofitkit/) 
 ### [DEMO APK](https://github.com/jamesdeperio/CodePocketBuilderDemo/blob/master/app-debug.apk)
