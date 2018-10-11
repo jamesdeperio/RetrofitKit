@@ -20,7 +20,10 @@
 ### [DEMO APK](https://github.com/jamesdeperio/CodePocketBuilderDemo/blob/master/app-debug.apk)
 ___
 ## CHANGELOG
-#### v1.0.4
+#### v1.0.5
+* FIXED: Failed to resolve: com.github.jamesdeperio:RetrofitKit:v1.0.4 on jitpack
+* UPDATED: Maven dependency version to 2.1
+#### ~~v1.0.4~~ (Cannot download using jitpact due to incompatible gradle and maven version)
 * MERGED: PR of [@marjorietiozon](https://github.com/marjorietiozon) for synchronization of retrofit instance
 * RENAMED: initRxAdapterFactory to initCallAdapterFactory
 #### v1.0.3
