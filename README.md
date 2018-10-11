@@ -2,7 +2,7 @@
 [![Release](https://jitpack.io/v/jamesdeperio/RetrofitKit.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
 [![GitHub release](https://img.shields.io/github/release/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/releases/)
 [![GitHub tag](https://img.shields.io/github/tag/jamesdeperio/RetrofitKit.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/tags/)
-[![GitHub commits](https://img.shields.io/github/commits-since/jamesdeperio/RetrofitKit/v1.0.4.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/commit/)
+[![GitHub commits](https://img.shields.io/github/commits-since/jamesdeperio/RetrofitKit/v1.0.5.svg)](https://GitHub.com/jamesdeperio/RetrofitKit/commit/)
 [![Kotlin](https://img.shields.io/badge/Kotlin-1.2.71-green.svg?style=flat-square)](http://kotlinlang.org)
 [![Build Status](https://img.shields.io/travis/jamesdeperio/RetrofitKit.svg?style=flat-square)](https://travis-ci.org/jamesdeperio/RetrofitKit)
 [![HitCount](http://hits.dwyl.io/jamesdeperio/RetrofitKit.svg)](http://hits.dwyl.io/jamesdeperio/RetrofitKit)
@@ -23,9 +23,9 @@ ___
 #### v1.0.5
 * FIXED: Failed to resolve: com.github.jamesdeperio:RetrofitKit:v1.0.4 on jitpack
 * UPDATED: Maven dependency version to 2.1
-#### ~~v1.0.4~~ (Cannot download using jitpact due to incompatible gradle and maven version)
 * MERGED: PR of [@marjorietiozon](https://github.com/marjorietiozon) for synchronization of retrofit instance
 * RENAMED: initRxAdapterFactory to initCallAdapterFactory
+#### ~~v1.0.4 (Cannot download using jitpact due to incompatible gradle and maven version)~~
 #### v1.0.3
 * FIXED: interceptorConfiguration was not executed in debug mode
 * MERGED: PR of [@yuelvic](https://github.com/yuelvic) for code optimization
