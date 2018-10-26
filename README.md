@@ -25,7 +25,7 @@ ___
 * UPDATED: Maven dependency version to 2.1
 * MERGED: PR of [@marjorietiozon](https://github.com/marjorietiozon) for synchronization of retrofit instance
 * RENAMED: initRxAdapterFactory to initCallAdapterFactory
-#### ~~v1.0.4 (Cannot download using jitpact due to incompatible gradle and maven version)~~
+#### ~~v1.0.4 (Cannot download using jitpack due to incompatible gradle and maven version)~~
 #### v1.0.3
 * FIXED: interceptorConfiguration was not executed in debug mode
 * MERGED: PR of [@yuelvic](https://github.com/yuelvic) for code optimization
