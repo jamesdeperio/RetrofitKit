@@ -14,8 +14,8 @@
 [![Open Source Helpers](https://www.codetriage.com/jamesdeperio/retrofitkit/badges/users.svg)](https://www.codetriage.com/jamesdeperio/retrofitkit)
 [![HitCount](http://hits.dwyl.io/jamesdeperio/RetrofitKit.svg)](http://hits.dwyl.io/jamesdeperio/RetrofitKit)
 [![Jitpack downloads](https://jitpack.io/v/jamesdeperio/Retrofitkit/month.svg)](https://jitpack.io/#jamesdeperio/Retrofitkit)
-[![Throughput Graph](https://graphs.waffle.io/jamesdeperio/RetrofitKit/throughput.svg)](https://waffle.io/jamesdeperio/RetrofitKit/metrics/throughput)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/jamesdeperio/RetrofitKit.svg?columns=all)](https://waffle.io/jamesdeperio/RetrofitKit)
+[![Throughput Graph](https://graphs.waffle.io/jamesdeperio/RetrofitKit/throughput.svg)](https://waffle.io/jamesdeperio/RetrofitKit/metrics/throughput)
 ## How to?
 ### [READ FULL DOCUMENTATION](https://jamesdeperio.github.io/retrofitkit/) 
 ### [DEMO APK](https://github.com/jamesdeperio/CodePocketBuilderDemo/blob/master/app-debug.apk)
