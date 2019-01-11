@@ -13,7 +13,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/jamesdeperio.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/jamesdeperio?tab=followers)
 [![Open Source Helpers](https://www.codetriage.com/jamesdeperio/retrofitkit/badges/users.svg)](https://www.codetriage.com/jamesdeperio/retrofitkit)
 [![HitCount](http://hits.dwyl.io/jamesdeperio/RetrofitKit.svg)](http://hits.dwyl.io/jamesdeperio/RetrofitKit)
-[![Jitpack downloads](https://jitpack.io/v/jamesdeperio/Retrofitkit/month.svg)](https://jitpack.io/#jamesdeperio/Retrofitkit)
+[![Jitpack downloads](https://jitpack.io/v/jamesdeperio/RetrofitKit/month.svg)](https://jitpack.io/#jamesdeperio/RetrofitKit)
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/jamesdeperio/RetrofitKit.svg?columns=all)](https://waffle.io/jamesdeperio/RetrofitKit)
 [![Throughput Graph](https://graphs.waffle.io/jamesdeperio/RetrofitKit/throughput.svg)](https://waffle.io/jamesdeperio/RetrofitKit/metrics/throughput)
 ## How to?
