@@ -28,6 +28,6 @@ class NetworkManager(context:Context) : RetrofitManager(context = context) {
                 .setJSONConverterFactory(gsonConverter)
                 .build()
     }
-    override fun initCallAdapterFactory(): CallAdapter.Factory = RxJava2CallAdapterFactory.create()
+    override fun initCallAdapterFactory(): CallAdapter.Factory? = RxJava2CallAdapterFactory.create()
     override fun isPrintLogEnabled(): Boolean = true
 }

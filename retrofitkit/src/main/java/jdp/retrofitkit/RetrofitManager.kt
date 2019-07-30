@@ -29,11 +29,18 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
             okHttpClientBuilder.addInterceptor(logging)
         }
         okHttpClientBuilder.interceptorConfiguration(okHttpClientBuilder)
-        retrofit = Retrofit.Builder()
+        val callAdapter = initCallAdapterFactory()
+        retrofit = if (callAdapter == null)
+            Retrofit.Builder()
                 .baseUrl(initBaseURL())
                 .client(okHttpClientBuilder.build())
                 .addConverterFactory(initConverterFactory())
-                .addCallAdapterFactory(initCallAdapterFactory())
+                .build()
+        else Retrofit.Builder()
+                .baseUrl(initBaseURL())
+                .client(okHttpClientBuilder.build())
+                .addConverterFactory(initConverterFactory())
+                .addCallAdapterFactory(callAdapter)
                 .build()
     }
 
