@@ -4,6 +4,7 @@ import android.content.Context
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import retrofit2.CallAdapter
 import retrofit2.Retrofit
 import java.util.concurrent.TimeUnit
 
@@ -56,4 +57,6 @@ abstract class RetrofitManager(private val context: Context) : RetrofitConfigura
     }else retrofit!!.create(service)
 
     override fun isPrintLogEnabled(): Boolean = false
+
+    override fun initCallAdapterFactory(): CallAdapter.Factory? = null
 }
