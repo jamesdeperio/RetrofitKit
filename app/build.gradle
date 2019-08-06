@@ -29,7 +29,7 @@ dependencies {
     ext.rxandroid_version = '2.1.1'
     implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
     implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.6.1'
 
     /*CONVERTER */
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
