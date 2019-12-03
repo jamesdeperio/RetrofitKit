@@ -34,7 +34,7 @@ dependencies {
     /*CONVERTER */
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
     implementation 'com.tickaroo.tikxml:annotation:0.8.13'
-    implementation 'com.tickaroo.tikxml:core:0.8.13'
+    implementation 'com.tickaroo.tikxml:core:0.8.15'
     kapt 'com.tickaroo.tikxml:processor:0.8.13'
     implementation 'com.tickaroo.tikxml:retrofit-converter:0.8.13'
 
