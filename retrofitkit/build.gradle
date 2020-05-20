@@ -21,7 +21,7 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    compileOnly 'com.squareup.retrofit2:retrofit:2.6.0'
+    compileOnly 'com.squareup.retrofit2:retrofit:2.9.0'
     compileOnly 'com.squareup.okhttp3:logging-interceptor:4.0.1'
 
 }
